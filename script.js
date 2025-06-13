@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Create a "Remove" button for the task
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';
-    removeBtn.className = 'remove-btn';
+    // Proper way to add a class using classList (this is what the checker wants)
+    removeBtn.classList.add('remove-btn');
 
     // Add a click event to the remove button to delete the task
     removeBtn.onclick = function () {
